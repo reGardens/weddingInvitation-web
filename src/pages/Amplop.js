@@ -19,7 +19,7 @@ const Dahsboard = () => {
     }
 
     return (
-        <div className="absolute transition duration-500 ease-in-out delay-75 customSwipeAmplop w-[360px] !mx-auto bg-slate-50 h-screen flex flex-col justify-center items-center overflow-hidden">
+        <div className="absolute z-[999] transition duration-500 ease-in-out delay-75 customSwipeAmplop w-[360px] !mx-auto bg-slate-50 h-screen flex flex-col justify-center items-center overflow-hidden">
             {/* daun top left */}
             <div className="absolute -top-2 left-0 animate-spinTopLeft01">
                 <img src={daunAtas01} className="" />
