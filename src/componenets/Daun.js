@@ -30,7 +30,7 @@ export const DauntTopRight = () => {
     return (
         <>
             <div className="absolute top-16 -right-[20px] animate-spinTopRight01">
-                <img src={daunBottom05} className="-rotate-[60deg] animate-animationFirstLoadPage bg-red-700" />
+                <img src={daunBottom05} className="-rotate-[60deg] animate-animationFirstLoadPage bg-blue-700" />
             </div>
             {/* <div className="absolute top-0 right-0 animate-spinTopRight02 z-10">
                 <img src={daunBottom03} className="-rotate-[90deg] animate-animationFirstLoadPage" />

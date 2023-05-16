@@ -16,8 +16,8 @@ const MainPages = () => {
                 <Amplop />
             </section>
 
-            <section className="flex justify-center relative w-full h-screen">
-                <div className="bg-slate-50 w-[360px] h-full relative overflow-hidden">
+            <section className="flex justify-center relative w-full h-full">
+                <div className="bg-slate-50 w-full h-full relative overflow-hidden">
                     <div className="!absolute w-[10rem] h-[10rem] top-0 left-0 z-50">
                         <DaunTopLeft />
                     </div>

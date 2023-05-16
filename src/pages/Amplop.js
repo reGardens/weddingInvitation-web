@@ -2,11 +2,6 @@ import React from "react";
 
 // images
 import ring from "../assets/images/personalia.jpg";
-import daunBottom01 from "../assets/images/daun-bottom-01.png";
-import daunBottom02 from "../assets/images/daun-bottom-02.png";
-import daunBottom03 from "../assets/images/daun-bottom-03.png";
-import daunBottom04 from "../assets/images/daun-bottom-04.png";
-import daunBottom05 from "../assets/images/daun-bottom-05.png";
 import ButtonGradientGreen from "../componenets/ButtonGradientGreen";
 import { DaunBottomLeft, DaunBottomRight, DaunTopLeft, DauntTopRight } from "../componenets/Daun";
 
@@ -17,7 +12,7 @@ const Dahsboard = () => {
     }
 
     return (
-        <div className="fixed z-[999] transition duration-500 ease-in-out delay-75 customSwipeAmplop w-screen h-screen mx-auto bg-slate-50 flex flex-col justify-center items-center overflow-hidden">
+        <div className="fixed z-[999] transition duration-500 ease-in-out delay-75 customSwipeAmplop w-full h-full mx-auto bg-slate-50 flex flex-col justify-center items-center overflow-hidden">
             <DaunTopLeft />
             <DauntTopRight />
             <DaunBottomLeft />
