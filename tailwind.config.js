@@ -5,11 +5,26 @@ module.exports = {
   ],
   theme: {
     extend: {
-      // interaktive animation
       keyframes: {
+        // interaktive animation
+        'animationFirstLoadPage': {
+          '0%': {
+            opacity: 0,
+            // transform: "scale(0)"
+            width: "0px",
+            height: "0px",
+          },
+          '100%': {
+            opacity: 1,
+            // transform: "scale(1.1)"
+            width: "100%",
+            height: "100%",
+          }
+        },
+
         // efek top left
         'spinTopLeft01': {
-          '0%, 100%': { transform: "rotate(25deg)" },
+          '0%, 100%': { transform: "rotate(9deg)" },
           '50%': { transform: "rotate(0deg)" }
         },
         'spinTopLeft02': {
@@ -17,11 +32,11 @@ module.exports = {
           '50%': { transform: "rotate(0deg)" }
         },
         'spinTopLeft03': {
-          '0%, 100%': { transform: "rotate(15deg)" },
+          '0%, 100%': { transform: "rotate(9deg)" },
           '50%': { transform: "rotate(0deg)" }
         },
         // efek top left
-        
+
         // efek top right
         'spinTopRight01': {
           '0%, 100%': { transform: "rotate(9deg)" },
@@ -65,19 +80,22 @@ module.exports = {
       },
       // to animation
       animation: {
+        // interaktive animation
+        "animationFirstLoadPage": 'animationFirstLoadPage 1s ease-in',
+
         // efek daun top left
         "spinTopLeft01": 'spinTopLeft01 3s ease-in-out infinite',
         "spinTopLeft02": 'spinTopLeft02 3s ease-in-out infinite',
         "spinTopLeft03": 'spinTopLeft03 3s ease-in-out infinite',
         // efek daun top left
-        
+
         // efek daun top right
         "spinTopRight01": 'spinTopRight01 3s ease-in-out infinite',
         "spinTopRight02": 'spinTopRight02 3s ease-in-out infinite',
         "spinTopRight03": 'spinTopRight03 3s ease-in-out infinite',
-        
+
         // efek daun top right
-        
+
         // efek daun bottom left
         "spinBottomLeft01": 'spinBottomLeft01 3s ease-in-out infinite',
         "spinBottomLeft02": 'spinBottomLeft02 3s ease-in-out infinite',
