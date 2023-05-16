@@ -17,7 +17,7 @@ const Dahsboard = () => {
     }
 
     return (
-        <div className="fixed z-[999] transition duration-500 ease-in-out delay-75 customSwipeAmplop w-[360px] h-screen mx-auto bg-slate-50 flex flex-col justify-center items-center overflow-hidden">
+        <div className="fixed z-[999] transition duration-500 ease-in-out delay-75 customSwipeAmplop w-screen h-screen mx-auto bg-slate-50 flex flex-col justify-center items-center overflow-hidden">
             <DaunTopLeft />
             <DauntTopRight />
             <DaunBottomLeft />
