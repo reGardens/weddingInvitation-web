@@ -11,10 +11,19 @@
   src: url(../assets/fonts/SantayAjah-Regular.ttf);
 }
 
+* {
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  /* display: none; */
+}
+
 body {
-    font-family: defaultFontSantayAjah !important;
+  font-family: defaultFontSantayAjah !important;
+  color: #677081;
 }
 
 .personal-name-style {
-    font-family: Selfilla;
+  font-family: Selfilla;
 }

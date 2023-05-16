@@ -12,9 +12,7 @@ const MainPages = () => {
 
     return (
         <>
-            <section className={`flex justify-center`}>
-                <Amplop />
-            </section>
+            <Amplop />
 
             <section className="flex justify-center relative w-full h-screen">
                 <div className="bg-slate-50 w-full h-full relative overflow-hidden">
