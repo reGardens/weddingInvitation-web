@@ -16,7 +16,7 @@ const MainPages = () => {
                 <Amplop />
             </section>
 
-            <section className="flex justify-center relative w-full h-full">
+            <section className="flex justify-center relative w-full h-screen">
                 <div className="bg-slate-50 w-full h-full relative overflow-hidden">
                     <div className="!absolute w-[10rem] h-[10rem] top-0 left-0 z-50">
                         <DaunTopLeft />
@@ -33,7 +33,7 @@ const MainPages = () => {
 
                     <div className="mb-5 relative">
                         <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-slate-50 to-transparent z-10">&nbsp;</div>
-                        <img src={imgPersonalia} className="opacity-50 object-cover" />
+                        <img src={imgPersonalia} className="w-full h-screen opacity-50 object-cover" />
                         <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-slate-50 to-transparent">&nbsp;</div>
 
                         <div className="absolute top-0 left-0 flex flex-col justify-center items-center w-full h-full gap-5">
@@ -43,6 +43,10 @@ const MainPages = () => {
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <section className="h-96">
+
             </section>
         </>
     );
