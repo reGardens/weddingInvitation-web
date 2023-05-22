@@ -7,20 +7,6 @@ module.exports = {
     extend: {
       keyframes: {
         // interaktive animation
-        'animationFirstLoadPage': {
-          '0%': {
-            opacity: 0,
-            // transform: "scale(0)"
-            width: "0px",
-            height: "0px",
-          },
-          '100%': {
-            opacity: 1,
-            // transform: "scale(1.1)"
-            width: "100%",
-            height: "100%",
-          }
-        },
 
         // efek top left
         'spinTopLeft01': {
@@ -38,6 +24,32 @@ module.exports = {
         // efek top left
 
         // efek top right
+        'animationFirstLoadPage': {
+          '0%': {
+            opacity: 0,
+            width: "0px",
+            height: "0px",
+          },
+          '100%': {
+            opacity: 1,
+            width: "100%",
+            height: "100%",
+          }
+        },
+        'animationFirstLoadingTopRight': {
+          '0%': {
+            opacity: 0,
+            transform: "translate(0, 0) rotate(0deg)",
+            width: "0px",
+            height: "0px",
+          },
+          '100%': {
+            opacity: 1,
+            transform: "translate(0, 0) rotate(0deg)",
+            width: "9rem",
+            height: "9rem",
+          }
+        },
         'spinTopRight01': {
           '0%, 100%': { transform: "rotate(9deg)" },
           '50%': { transform: "rotate(0deg)" }
@@ -83,6 +95,7 @@ module.exports = {
         // interaktive animation
         "animationFirstLoadPage": 'animationFirstLoadPage 1s ease-in',
 
+
         // efek daun top left
         "spinTopLeft01": 'spinTopLeft01 3s ease-in-out infinite',
         "spinTopLeft02": 'spinTopLeft02 3s ease-in-out infinite',
@@ -90,6 +103,7 @@ module.exports = {
         // efek daun top left
 
         // efek daun top right
+        "animationFirstLoadingTopRight": 'animationFirstLoadingTopRight 1s ease-in',
         "spinTopRight01": 'spinTopRight01 3s ease-in-out infinite',
         "spinTopRight02": 'spinTopRight02 3s ease-in-out infinite',
         "spinTopRight03": 'spinTopRight03 3s ease-in-out infinite',

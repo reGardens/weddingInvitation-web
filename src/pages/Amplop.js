@@ -1,8 +1,8 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 // images
 import ring from "../assets/images/personalia.jpg";
-import ButtonGradientGreen from "../componenets/ButtonGradientGreen";
+import ButtonGradient from "../componenets/ButtonGradient";
 import { DaunBottomLeft, DaunBottomRight, DaunTopLeft, DauntTopRight } from "../componenets/Daun";
 
 const Amplop = () => {
@@ -35,7 +35,7 @@ const Amplop = () => {
                             <div className="rounded-full border-2 overflow-hidden border-transparent object-cover">
                                 <img
                                     src={ring}
-                                    className="w-[130px] h-[130px] object-cover"
+                                    className="img w-[130px] h-[130px] object-cover"
                                 />
                             </div>
                         </div>
@@ -48,7 +48,7 @@ const Amplop = () => {
                             Wedding Apps
                         </div>
 
-                        <ButtonGradientGreen onClick={buttonHandler} />
+                        <ButtonGradient onClick={buttonHandler} />
                     </div>
                 )
             }

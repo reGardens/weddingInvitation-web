@@ -12,7 +12,7 @@
 }
 
 * {
-  scrollbar-width: none;
+  /* scrollbar-width: 30p; */
 }
 
 *::-webkit-scrollbar {
