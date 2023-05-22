@@ -45,7 +45,7 @@ const Amplop = () => {
                     Wedding Invitation
                 </div>
 
-                <div className="text-2xl personal-name-style mb-5">
+                <div className="text-xl lg:text-2xl font-bold personal-name-style mb-5">
                     Mas Firman <img src={ring} className="w-[30px] inline-block" /> Ka Lika
                 </div>
 

@@ -36,7 +36,7 @@ const MainPages = () => {
                         <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-white to-transparent">&nbsp;</div>
 
                         <div className="absolute top-0 left-0 flex flex-col justify-center items-center w-full h-full gap-5">
-                            <p className="text-6xl ">
+                            <p className="text-xl lg:text-4xl font-bold personal-name-style">
                                 Mas Firman <img src={ring} className="w-[30px] inline-block" /> Ka Lika
                             </p>
                             <p className="text-4xl">Sabtu, 30 Mei 2023</p>
