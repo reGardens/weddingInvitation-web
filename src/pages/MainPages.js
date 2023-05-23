@@ -50,7 +50,7 @@ const MainPages = () => {
                                 <br />
                                 menjadi bagian dari hari istimewa kami!
                             </p>
-                            {/* <CountDown /> */}
+                            <CountDown />
                             <p className="uppercase text-lg lg:text-4xl">Sabtu, 30 Mei 2023</p>
                         </div>
                     </div>
