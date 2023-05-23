@@ -32,6 +32,10 @@ const Amplop = () => {
                 <DaunBottomLeft />
                 <DaunBottomRight />
 
+                <div className="text-xl lg:text-2xl font-bold personal-name-style mb-5">
+                    Mas Firman <img src={ring} className="w-[30px] inline-block" /> Ka Lika
+                </div>
+
                 <div className="border-2 border-black rounded-full">
                     <div className="rounded-full border-2 overflow-hidden border-transparent object-cover">
                         <img
@@ -41,12 +45,11 @@ const Amplop = () => {
                     </div>
                 </div>
 
-                <div className="text-center text-4xl p-5 font-normal">
-                    Wedding Invitation
-                </div>
-
-                <div className="text-xl lg:text-2xl font-bold personal-name-style mb-5">
-                    Mas Firman <img src={ring} className="w-[30px] inline-block" /> Ka Lika
+                <div className="text-center text-2xl p-5 font-normal">
+                    Kepada Yth. <br />
+                    Bpk/Ibu/Saudara/i <br />
+                    <span className="text-4xl font-bold">Pak Lurah</span> <br />
+                    di Tempat
                 </div>
 
 

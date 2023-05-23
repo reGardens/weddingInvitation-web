@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 
 const CountDown = () => {
     const [state, setState] = useState({
@@ -10,7 +10,7 @@ const CountDown = () => {
 
     let interval;
 
-    const startTimer = () => {
+    const startTimer = useCallback(() => {
         const countDownDate = new Date("May 30,2023").getTime();
 
         interval = setInterval(() => {
@@ -39,7 +39,7 @@ const CountDown = () => {
                 })
             }
         });
-    };
+    }, []);
 
     useEffect(() => {
         startTimer();
@@ -47,7 +47,7 @@ const CountDown = () => {
 
     return (
         <div className="flex justify-center relative">
-            <div className="text-2xl backdrop-blur-md flex shadow-inner items-center">
+            <div className="text-2xl lg:text-5xl backdrop-blur-md flex shadow-inner items-center">
                 <div className="px-5 flex flex-col justify-center items-center">
                     <p className="text-sm font-bold tracking-[3px]">Hari</p>
                     <p>{state.days}</p>
