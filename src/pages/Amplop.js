@@ -7,25 +7,23 @@ import { DaunBottomLeft, DaunBottomRight, DaunTopLeft, DauntTopRight } from "../
 import ring from "../assets/icons/diamond-ring.png";
 
 const Amplop = () => {
-    const [showAmplop, setShowAmplop] = useState(true)
+    const [showAmplop, setShowAmplop] = useState(true) // to hendle scroll indicator and add cannot scroll to body
 
     useEffect(() => {
-        if (showAmplop) {
+        if (showAmplop) { // to hendle scroll indicator and add cannot scroll to body
             document.body.style.overflow = "hidden"
         }
     }, []);
 
     const buttonHandler = () => {
         const amplop = document.querySelector('.customSwipeAmplop');
-        setShowAmplop(false)
+        setShowAmplop(false) // to hendle scroll indicator and add cannot scroll to body
         amplop.style.transform = 'translateY(-100%)';
         document.body.style.overflow = "scroll"
     }
 
     return (
         <>
-            {/* {
-                showAmplop && ( */}
             <div className="fixed z-[9999] transition duration-500 ease-in-out delay-75 customSwipeAmplop w-screen h-full mx-auto bg-slate-50 flex flex-col justify-center items-center overflow-hidden">
                 <DaunTopLeft />
                 <DauntTopRight />
@@ -53,10 +51,8 @@ const Amplop = () => {
                 </div>
 
 
-                <ButtonGradient onClick={buttonHandler} />
+                <ButtonGradient handleClick={buttonHandler} />
             </div>
-            {/* //     )
-            // } */}
         </>
     );
 };

@@ -1,8 +1,9 @@
 import anime from "animejs";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
-const ButtonGradient = ({ onClick }) => {
+const ButtonGradient = ({ handleClick, animation }) => {
     const animationRef = useRef(null)
+    // const [showNextPage, setShowNextPage] = useState(false)
 
     useEffect(() => {
         animationRef.current = anime({
@@ -15,10 +16,15 @@ const ButtonGradient = ({ onClick }) => {
         });
     }, []);
 
-    const ok = () => {
-    }
-    return <div className="flex text-white" onClick={onClick}>
-        <button onClick={ok} className="anime-customButton mx-auto tracking-widest bg-gradient-to-r from-[#677081] to-[#979faf] px-7 py-2 font-semibold rounded-md">
+    // const ok = () => {
+    //     // setShowNextPage(true)
+    //     // setTimeout(() => {
+    //     //     alert('masuk')
+    //     // }, 800);
+    // }
+    
+    return <div className={`${animation} flex text-white`}>
+        <button onClick={handleClick} className="anime-customButton mx-auto tracking-widest bg-gradient-to-r from-[#677081] to-[#979faf] px-7 py-2 font-semibold rounded-md">
             Buka Surat
         </button>
     </div>;
