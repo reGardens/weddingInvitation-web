@@ -201,7 +201,7 @@ const MainPages = () => {
                                     <p className="text-lg lg:text-3xl w-[40rem] text-center leading-none font-bold">
                                         Dikediaman Mempelai Wanita
                                     </p>
-                                    <p className="text-lg lg:text-3xl w-[40rem] text-center leading-none">
+                                    <p className="text-lg lg:text-3xl w-[20rem] lg:w-[40rem] text-center leading-none">
                                         Jl Pepaya I RT 002 RW 005 Kel. & Kec. Jagakarsa Jakarta Selatan , DKI Jakarta 12620
                                     </p>
                                 </div>
