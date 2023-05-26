@@ -12,8 +12,9 @@ import daunBottom03 from "../assets/images/daun-bottom-03.png";
 import dummyArrow from "../assets/icons/arrows.png"
 import personaliaImages from "../assets/images/personalia.jpg";
 import ButtonGradient from "../componenets/ButtonGradient";
-import { DaunBottomLeft, DaunBottomRight, DaunTopLeft, DauntTopRight } from "../componenets/Daun";
+import { DaunBottomLeft, DaunBottomRight, DaunTopLeft, DauntTopRight, DaunTopLeftAmplop } from "../componenets/Daun";
 import anime from "animejs";
+import Maps from "../componenets/Maps";
 
 
 const MainPages = () => {
@@ -47,7 +48,7 @@ const MainPages = () => {
         <>
             {/* <Amplop /> */}
             <div className="fixed z-[9999] transition duration-500 ease-in-out delay-75 customSwipeAmplop w-screen h-full mx-auto bg-slate-50 flex flex-col justify-center items-center overflow-hidden">
-                <DaunTopLeft />
+                <DaunTopLeftAmplop />
                 <DauntTopRight />
                 <DaunBottomLeft />
                 <DaunBottomRight />
@@ -76,11 +77,11 @@ const MainPages = () => {
             </div>
 
             {
-                loadBodyContent && (
+                loadBodyContent ? (
                     <>
                         <section className="flex justify-center relative w-full h-screen">
                             <div className="bg-slate-50 w-full h-screen relative overflow-hidden">
-                                <div className="!absolute w-[10rem] h-[10rem] top-0 left-0 z-50">
+                                <div className="!absolute w-[10rem] h-[10rem] z-50 top-0 left-0">
                                     <DaunTopLeft />
                                 </div>
                                 <div className="!absolute w-[10rem] h-[10rem] z-50 top-0 right-0 -scale-x-[1]">
@@ -209,10 +210,17 @@ const MainPages = () => {
                             {/* <div className="bg-slate-50 w-full rounded-3xl shadow-[0_0_40px_0px_rgba(0,0,0,0.1)] pt-14">
                 </div> */}
                         </section>
+                        
+                        <section className="flex flex-col justify-center items-center relative w-full h-full overflow-hidden p-6">
+                            <div className="py-3 flex flex-col items-center relative z-[60]">
+                                <Maps />
+                            </div>
+                        </section>
                     </>
+                ) : (
+                    <div></div>
                 )
             }
-
         </>
     );
 };

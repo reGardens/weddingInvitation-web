@@ -15,6 +15,35 @@ import daunBottom04 from "../assets/images/daun-bottom-04.png";
 
 import anime from "animejs";
 
+export const DaunTopLeftAmplop = () => {
+    const animationRef = useRef(null)
+
+    useEffect(() => {
+        animationRef.current = anime({
+            targets: '.animation-customTLA',
+            translateX: [-100, 0],
+            translateY: [-100, 0],
+            scale: [0, 1],
+            easing: "easeInOutSine",
+            duration: 1000
+        });
+    }, []);
+    
+    return (
+        <>
+            <div className={`animation-customTLA absolute -top-2 left-0`}>
+                <img src={daunAtas01} className="animate-spinTopLeft01" />
+            </div>
+            <div className="animation-customTLA absolute top-0 -left-2 z-10">
+                <img src={daunAtas02} className="animate-spinTopLeft02" />
+            </div>
+            <div className="animation-customTLA absolute top-3 -left-1">
+                <img src={daunAtas03} className="animate-spinTopLeft03" />
+            </div>
+        </>
+    );
+};
+
 export const DaunTopLeft = () => {
     const animationRef = useRef(null)
 
@@ -28,7 +57,7 @@ export const DaunTopLeft = () => {
             duration: 1000
         });
     }, []);
-
+    
     return (
         <>
             <div className={`animation-customTL absolute -top-2 left-0`}>
@@ -102,7 +131,7 @@ export const DaunBottomLeft = () => {
 export const DaunBottomRight = () => {
     const animationRef = useRef(null)
 
-        useEffect(() => {
+    useEffect(() => {
         animationRef.current = anime({
             targets: '.animation-customBR',
             translateX: [100, 0],
