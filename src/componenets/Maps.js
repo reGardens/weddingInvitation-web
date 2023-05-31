@@ -1,17 +1,17 @@
 import React, { useEffect } from "react";
 import { MapContainer, Marker, Popup, TileLayer, useMapEvents } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import L from 'leaflet';
+import L, { Icon, icon } from 'leaflet';
 
 // icons
-import { ImLocation } from "react-icons/im"
+import { ImLocation } from 'react-icons/im'; // Replace 'FaCustomIcon' with the desired React Icons component
 
 // Custom marker icon
-const CustomIcon = L.icon({
-    iconUrl: ImLocation,
-    iconSize: [32, 32],
-    iconAnchor: [16, 32]
-});
+const CustomIcon = new Icon({
+    iconUrl: ImLocation, // Path to your custom icon image or a React Icons component
+    iconSize: [32, 32], // Icon size in pixels
+    iconAnchor: [16, 32], // Anchor point of the icon (relative to its top-left corner)
+  });
 
 const Maps = () => {
     const position = [-6.153453755284044, 106.7896074827283] // Latitude, Longitude
@@ -53,9 +53,11 @@ const Maps = () => {
                 </Marker>
             </MapContainer>
 
-            <button onClick={handleSwapToGMaps} className="tracking-widest bg-gradient-to-r from-[#677081] to-[#979faf] px-3 py-1 mt-5 font-semibold rounded-xl text-white">
+            <button onClick={handleSwapToGMaps} className="tracking-widest bg-gradient-to-r from-[#677081] to-[#979faf] px-1 pr-[5.5px] py-1 mt-5 font-semibold rounded-xl text-white">
                 <ImLocation className="inline-block mr-3" />
-                Open Location
+                <span className="text-sm">
+                    Open Location
+                </span>
             </button>
         </>
     );

@@ -102,19 +102,19 @@ const MainPages = () => {
                                     <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-white to-transparent">&nbsp;</div>
 
                                     <div className="!animation-fadeIn absolute top-0 left-0 flex flex-col justify-center items-center w-full h-full gap-5">
-                                        <p className={`text-xl lg:text-4xl uppercase text-center`}>
+                                        <p className={`text-2xl lg:text-4xl uppercase text-center`}>
                                             The Wedding of
                                         </p>
                                         <p className="text-2xl lg:text-4xl font-bold personal-name-style">
                                             Firman <img src={ring} className="w-[30px] inline-block" /> Lika
                                         </p>
-                                        <p className="text-lg lg:text-3xl text-center">
+                                        <p className="text-xl lg:text-3xl text-center">
                                             Kami akan menikah, dan kami ingin Anda
                                             <br />
                                             menjadi bagian dari hari istimewa kami!
                                         </p>
                                         {/* <CountDown /> */}
-                                        <p className="uppercase text-xl lg:text-4xl">Sabtu, 30 Mei 2023</p>
+                                        <p className="uppercase text-2xl lg:text-4xl">Sabtu, 30 Mei 2023</p>
                                     </div>
                                 </div>
                             </div>
@@ -144,17 +144,17 @@ const MainPages = () => {
                                         Assalamu’alaikum Wr. Wb.
                                     </p>
 
-                                    <p className="text-lg lg:text-3xl text-center mb-4">
+                                    <p className="text-xl lg:text-3xl text-center mb-4">
                                         Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta'ala, insyaaAllah kami akan menyelenggarakan acara pernikahan :
                                     </p>
 
                                     <img src={imgPersonalia} className="w-72 h-80 object-cover rounded-3xl mb-3" />
 
                                     <p className="text-xl lg:text-2xl font-extrabold personal-name-style">Firman Hidayat</p>
-                                    <p className="text-lg lg:text-3xl">Putri Keempat dari Bapak ........ & Ibu ........</p>
+                                    <p className="text-xl lg:text-3xl">Putri Keempat dari Bapak ........ & Ibu ........</p>
                                     ~~~<img src={ring} className="w-[40px] my-4" />~~~
                                     <p className="text-lg lg:text-3xl font-extrabold personal-name-style">Malikey</p>
-                                    <p className="text-lg lg:text-3xl">Putri Keempat dari Bapak ........ & Ibu ........</p>
+                                    <p className="text-xl lg:text-3xl">Putri Keempat dari Bapak ........ & Ibu ........</p>
 
                                 </div>
                             </div>
@@ -171,23 +171,23 @@ const MainPages = () => {
                                 <FloralBorder />
 
                                 <div className="flex-1 lg:flex">
-                                    <div className="flex flex-col items-center justify-center relative z-[60] my-6">
-                                        <img src={ring} className="w-[50px] lg:w-[60px] inline-block" />
-                                        <p className="text-4xl font-bold mt-2 uppercase">Akad nikah</p>
+                                    <div className="flex flex-col items-center justify-center relative z-[60] lg:my-6 mt-6 lg:mt-0">
+                                        <img src={ring} className="w-[60px] inline-block" />
+                                        <p className="text-2xl lg:text-4xl font-bold mt-2 uppercase">Akad nikah</p>
 
-                                        <div className="flex items-center text-2xl lg:text-3xl gap-1 lg:gap-4 bg-[rgba(0,0,0,0.1)] py-1 px-3 m-3 rounded-md shadow-[0_0_20px_0px_rgba(0,0,0,0.1)] relative">
+                                        <div className="flex items-center text-xl lg:text-3xl gap-2 lg:gap-4 bg-[rgba(0,0,0,0.1)] py-1 px-3 m-3 rounded-md shadow-[0_0_20px_0px_rgba(0,0,0,0.1)] relative">
                                             <p className="font-bold">Sabtu <br /> 30 Mei 2023</p>
                                             <img src={dummyArrow} className="w-[20px] lg:w-[30px] h-[90px] rotate-12" />
                                             <p className="font-bold">Pukul <br /> 7:30 - 11:00</p>
                                         </div>
 
-                                        <p className="text-lg lg:text-3xl w-[40rem] text-center leading-none font-bold">
+                                        <p className="text-xl lg:text-3xl w-[40rem] text-center leading-none font-bold">
                                             Alamat
                                         </p>
-                                        <p className="text-lg lg:text-3xl w-[40rem] text-center leading-none font-bold">
+                                        <p className="text-xl lg:text-3xl w-[40rem] text-center leading-none font-bold">
                                             Dikediaman Mempelai Wanita
                                         </p>
-                                        <p className="text-lg lg:text-3xl w-[20rem] lg:w-[40rem] text-center leading-none">
+                                        <p className="text-xl lg:text-3xl w-[20rem] lg:w-[40rem] text-center leading-none">
                                             Jl Pepaya I RT 002 RW 005 Kel. & Kec. Jagakarsa Jakarta Selatan , DKI Jakarta 12620
                                         </p>
                                     </div>
@@ -205,23 +205,23 @@ const MainPages = () => {
                                 <FloralBorder />
 
                                 <div className="flex-1 lg:flex">
-                                    <div className="flex flex-col items-center justify-center relative z-[60] my-6">
-                                        <img src={bucketFlower} className="w-[50px] lg:w-[70px] inline-block" />
-                                        <p className="text-4xl font-bold mt-1 uppercase">Resepsi</p>
+                                    <div className="flex flex-col items-center justify-center relative z-[60] lg:my-6 mt-6 lg:mt-0">
+                                        <img src={bucketFlower} className="w-[70px] inline-block" />
+                                        <p className="text-2xl lg:text-4xl font-bold mt-1 uppercase">Resepsi</p>
 
-                                        <div className="flex items-center text-2xl lg:text-3xl gap-1 lg:gap-4 bg-[rgba(0,0,0,0.1)] py-1 px-3 m-3 rounded-md shadow-[0_0_20px_0px_rgba(0,0,0,0.1)] relative">
+                                        <div className="flex items-center text-2xl lg:text-3xl gap-2 lg:gap-4 bg-[rgba(0,0,0,0.1)] py-1 px-3 m-3 rounded-md shadow-[0_0_20px_0px_rgba(0,0,0,0.1)] relative">
                                             <p className="font-bold">Sabtu <br /> 30 Mei 2023</p>
                                             <img src={dummyArrow} className="w-[20px] lg:w-[30px] h-[90px] rotate-12" />
                                             <p className="font-bold">Pukul <br /> 11:00 - Selesai</p>
                                         </div>
 
-                                        <p className="text-lg lg:text-3xl w-[40rem] text-center leading-none font-bold">
+                                        <p className="text-xl lg:text-3xl w-[40rem] text-center leading-none font-bold">
                                             Alamat
                                         </p>
-                                        <p className="text-lg lg:text-3xl w-[40rem] text-center leading-none font-bold">
+                                        <p className="text-xl lg:text-3xl w-[40rem] text-center leading-none font-bold">
                                             Dikediaman Mempelai Wanita
                                         </p>
-                                        <p className="text-lg lg:text-3xl w-[20rem] lg:w-[40rem] text-center leading-none">
+                                        <p className="text-xl lg:text-3xl w-[20rem] lg:w-[40rem] text-center leading-none">
                                             Jl Pepaya I RT 002 RW 005 Kel. & Kec. Jagakarsa Jakarta Selatan , DKI Jakarta 12620
                                         </p>
                                     </div>
