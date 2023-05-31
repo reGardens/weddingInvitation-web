@@ -162,15 +162,15 @@ const MainPages = () => {
 
                         <section className="flex flex-col justify-center items-center relative w-full h-full overflow-hidden p-6">
                             <div className="flex rotate-[130deg] justify-center items-center my-14">
-                                <img src={daunBottom03} className="animate-spinTopRight02 opacity-70" />
-                                <p className="text-2xl lg:text-4xl absolute uppercase font-bold -rotate-[130deg] w-[9.1rem] lg:w-[13.6rem] mx-auto">save the date</p>
+                                <img src={daunBottom03} className="animate-spinTopRight02 w-[5rem] opacity-70" />
+                                <p className="text-2xl lg:text-4xl absolute uppercase font-bold -rotate-[130deg] min-w-max mx-auto">save the date</p>
                             </div>
 
                             <div className="relative w-full h-full flex justify-center">
                                 <GlassEffect />
                                 <FloralBorder />
 
-                                <div className="flex-1 lg:flex">
+                                <div className="flex-1 lg:flex justify-center">
                                     <div className="flex flex-col items-center justify-center relative z-[60] lg:my-6 mt-6 lg:mt-0">
                                         <img src={ring} className="w-[60px] inline-block" />
                                         <p className="text-2xl lg:text-4xl font-bold mt-2 uppercase">Akad nikah</p>
@@ -197,14 +197,12 @@ const MainPages = () => {
                                     </div>
                                 </div>
                             </div>
-                        </section>
 
-                        <section className="flex flex-col justify-center items-center relative w-full h-full overflow-hidden p-6">
-                            <div className="relative w-full h-full flex justify-center">
+                            <div className="relative w-full h-full flex justify-center mt-6">
                                 <GlassEffect />
                                 <FloralBorder />
 
-                                <div className="flex-1 lg:flex">
+                                <div className="flex-1 lg:flex justify-center">
                                     <div className="flex flex-col items-center justify-center relative z-[60] lg:my-6 mt-6 lg:mt-0">
                                         <img src={bucketFlower} className="w-[70px] inline-block" />
                                         <p className="text-2xl lg:text-4xl font-bold mt-1 uppercase">Resepsi</p>
@@ -232,6 +230,14 @@ const MainPages = () => {
                                 </div>
                             </div>
                         </section>
+
+                        <section className="flex flex-col justify-center items-center relative w-full h-full overflow-hidden p-6">
+                            <div className="flex rotate-[130deg] justify-center items-center my-14">
+                                <img src={daunBottom03} className="animate-spinTopRight02 w-[5rem] opacity-70" />
+                                <p className="text-2xl lg:text-4xl absolute uppercase font-bold -rotate-[130deg] min-w-max mx-auto">gallery</p>
+                            </div>
+                        </section>
+
                     </>
                 ) : (
                     <div></div>
