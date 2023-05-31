@@ -1,21 +1,23 @@
+// libraries
 import React, { useState, useEffect, useRef } from "react";
-
-// pages
-import Amplop from "./Amplop"
-import CountDown from "../componenets/CountDown";
+import anime from "animejs";
+import Maps from "../componenets/Maps";
 
 // images
 import imgPersonalia from "../assets/images/personalia.jpg"
 import ring from "../assets/icons/diamond-ring.png";
+import bucketFlower from "../assets/icons/bucket.png";
 import bismillahirrahmanirrahim from "../assets/images/bismillahirrahmanirrahim.png"
 import daunBottom03 from "../assets/images/daun-bottom-03.png";
 import dummyArrow from "../assets/icons/arrows.png"
 import personaliaImages from "../assets/images/personalia.jpg";
+
+// pages
+import CountDown from "../componenets/CountDown";
 import ButtonGradient from "../componenets/ButtonGradient";
 import { DaunBottomLeft, DaunBottomRight, DaunTopLeft, DauntTopRight, DaunTopLeftAmplop } from "../componenets/Daun";
-import anime from "animejs";
-import Maps from "../componenets/Maps";
-
+import GlassEffect from "../componenets/GlassEffect";
+import FloralBorder from "../componenets/FloralBorder";
 
 const MainPages = () => {
     const animationRef = useRef(null)
@@ -111,7 +113,7 @@ const MainPages = () => {
                                             <br />
                                             menjadi bagian dari hari istimewa kami!
                                         </p>
-                                        <CountDown />
+                                        {/* <CountDown /> */}
                                         <p className="uppercase text-xl lg:text-4xl">Sabtu, 30 Mei 2023</p>
                                     </div>
                                 </div>
@@ -133,9 +135,7 @@ const MainPages = () => {
                             </div>
 
                             <div className="relative w-full h-full">
-                                {/* efek glass */}
-                                <div className="bg-white absolute opacity-60 z-50 w-full h-full rounded-3xl shadow-[0_0_40px_0px_rgba(0,0,0,0.1)]">&nbsp;</div>
-                                {/* efek glass */}
+                                <GlassEffect />
 
                                 <div className="py-3 flex flex-col items-center relative z-[60]">
                                     <img src={bismillahirrahmanirrahim} className="w-72 h-20 object-cover" />
@@ -166,54 +166,70 @@ const MainPages = () => {
                                 <p className="text-2xl lg:text-4xl absolute uppercase font-bold -rotate-[130deg] w-[9.1rem] lg:w-[13.6rem] mx-auto">save the date</p>
                             </div>
 
-                            <div className="relative w-full h-full overflow-hidden flex justify-center">
-                                <div className="absolute flex justify-center items-center w-[21rem] h-full">
-                                    <div className="!absolute w-[10rem] h-[10rem] top-0 left-0 z-50 rotate-180">
-                                        <DaunTopLeft />
-                                    </div>
-                                    <div className="!absolute w-[10rem] h-[10rem] z-50 top-0 right-0 -scale-x-[1] rotate-180">
-                                        <DaunTopLeft />
-                                    </div>
-                                    <div className="!absolute w-[10rem] h-[10rem] z-50 bottom-0 left-0 -scale-y-[1] rotate-180">
-                                        <DaunTopLeft />
-                                    </div>
-                                    <div className="!absolute w-[10rem] h-[10rem] z-50 bottom-0 right-0">
-                                        <DaunTopLeft />
-                                    </div>
-                                </div>
+                            <div className="relative w-full h-full flex justify-center">
+                                <GlassEffect />
+                                <FloralBorder />
 
-                                {/* efek glass */}
-                                <div className="bg-white absolute opacity-60 z-50 w-full h-full rounded-3xl shadow-[0_0_40px_0px_rgba(0,0,0,0.1)]">&nbsp;</div>
-                                {/* efek glass */}
+                                <div className="flex-1 lg:flex">
+                                    <div className="flex flex-col items-center justify-center relative z-[60] my-6">
+                                        <img src={ring} className="w-[50px] lg:w-[60px] inline-block" />
+                                        <p className="text-4xl font-bold mt-2 uppercase">Akad nikah</p>
 
-                                <div className="py-3 flex flex-col items-center relative z-[60]">
-                                    <img src={ring} className="w-[50px] inline-block" />
-                                    <p className="lg:text-4xl uppercase">Akad nikah</p>
+                                        <div className="flex items-center text-2xl lg:text-3xl gap-1 lg:gap-4 bg-[rgba(0,0,0,0.1)] py-1 px-3 m-3 rounded-md shadow-[0_0_20px_0px_rgba(0,0,0,0.1)] relative">
+                                            <p className="font-bold">Sabtu <br /> 30 Mei 2023</p>
+                                            <img src={dummyArrow} className="w-[20px] lg:w-[30px] h-[90px] rotate-12" />
+                                            <p className="font-bold">Pukul <br /> 7:30 - 11:00</p>
+                                        </div>
 
-                                    <div className="flex items-center text-2xl lg:text-3xl gap-4 bg-white py-1 px-3 m-3 rounded-md shadow-[0_0_20px_0px_rgba(0,0,0,0.1)] relative">
-                                        <p className="font-bold">Sabtu <br /> 30 Mei 2023</p>
-                                        <img src={dummyArrow} className="w-[30px] h-[90px] rotate-12" />
-                                        <p className="font-bold">Pukul <br /> 7:30 - 11:00</p>
+                                        <p className="text-lg lg:text-3xl w-[40rem] text-center leading-none font-bold">
+                                            Alamat
+                                        </p>
+                                        <p className="text-lg lg:text-3xl w-[40rem] text-center leading-none font-bold">
+                                            Dikediaman Mempelai Wanita
+                                        </p>
+                                        <p className="text-lg lg:text-3xl w-[20rem] lg:w-[40rem] text-center leading-none">
+                                            Jl Pepaya I RT 002 RW 005 Kel. & Kec. Jagakarsa Jakarta Selatan , DKI Jakarta 12620
+                                        </p>
                                     </div>
 
-                                    <p className="text-lg lg:text-3xl w-[40rem] text-center leading-none font-bold">
-                                        Alamat
-                                    </p>
-                                    <p className="text-lg lg:text-3xl w-[40rem] text-center leading-none font-bold">
-                                        Dikediaman Mempelai Wanita
-                                    </p>
-                                    <p className="text-lg lg:text-3xl w-[20rem] lg:w-[40rem] text-center leading-none">
-                                        Jl Pepaya I RT 002 RW 005 Kel. & Kec. Jagakarsa Jakarta Selatan , DKI Jakarta 12620
-                                    </p>
+                                    <div className="py-3 flex flex-col items-center relative z-[60]">
+                                        <Maps />
+                                    </div>
                                 </div>
                             </div>
-                            {/* <div className="bg-slate-50 w-full rounded-3xl shadow-[0_0_40px_0px_rgba(0,0,0,0.1)] pt-14">
-                </div> */}
                         </section>
-                        
+
                         <section className="flex flex-col justify-center items-center relative w-full h-full overflow-hidden p-6">
-                            <div className="py-3 flex flex-col items-center relative z-[60]">
-                                <Maps />
+                            <div className="relative w-full h-full flex justify-center">
+                                <GlassEffect />
+                                <FloralBorder />
+
+                                <div className="flex-1 lg:flex">
+                                    <div className="flex flex-col items-center justify-center relative z-[60] my-6">
+                                        <img src={bucketFlower} className="w-[50px] lg:w-[70px] inline-block" />
+                                        <p className="text-4xl font-bold mt-1 uppercase">Resepsi</p>
+
+                                        <div className="flex items-center text-2xl lg:text-3xl gap-1 lg:gap-4 bg-[rgba(0,0,0,0.1)] py-1 px-3 m-3 rounded-md shadow-[0_0_20px_0px_rgba(0,0,0,0.1)] relative">
+                                            <p className="font-bold">Sabtu <br /> 30 Mei 2023</p>
+                                            <img src={dummyArrow} className="w-[20px] lg:w-[30px] h-[90px] rotate-12" />
+                                            <p className="font-bold">Pukul <br /> 11:00 - Selesai</p>
+                                        </div>
+
+                                        <p className="text-lg lg:text-3xl w-[40rem] text-center leading-none font-bold">
+                                            Alamat
+                                        </p>
+                                        <p className="text-lg lg:text-3xl w-[40rem] text-center leading-none font-bold">
+                                            Dikediaman Mempelai Wanita
+                                        </p>
+                                        <p className="text-lg lg:text-3xl w-[20rem] lg:w-[40rem] text-center leading-none">
+                                            Jl Pepaya I RT 002 RW 005 Kel. & Kec. Jagakarsa Jakarta Selatan , DKI Jakarta 12620
+                                        </p>
+                                    </div>
+
+                                    <div className="py-3 flex flex-col items-center relative z-[60]">
+                                        <Maps />
+                                    </div>
+                                </div>
                             </div>
                         </section>
                     </>
